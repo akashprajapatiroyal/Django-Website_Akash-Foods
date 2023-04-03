@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/10.jfif" class="d-block w-100" alt="samosa" width="1500" height="400">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Samosas</h5>
+              <p>Must try snack a speciality of Akash Foods.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/11.jfif" class="d-block w-100" alt="..." width="1500" height="400">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pyaz Kachori</h5>
+              <p>A Savoury and filling dish from Rajasthan. </p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/12.jfif" class="d-block w-100" alt="..." width="1500" height="400">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PaniPuri</h5>
+              <p>A mouth watering spicy street food. </p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<div class="album py-2 bg-light">
+  <h1 class="text-center">Delicious range of Savoury Foods</h1>
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/13.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Kanji Vada</p>
+            <p class="card-text">Kanji vada is a popular local delicacy of Rajasthan containing moong dal vadas immersed in tangy mustard flavoured liquid called Kanji.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/14.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+
+          <div class="card-body">
+            <p class="card-text">Raj Kachori</p>
+            <p class="card-text">A popular Indian chaat which crispy fried kachori filled with potatoes, boiled moong dal, yogurts, spices, chutneys and topped with various garnishes!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 40</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/15.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+
+          <div class="card-body">
+            <p class="card-text">Vada Pav</p>
+            <p class="card-text">A savory and spicy snack from the streets of mumbai with vada stuffed in pav accompanied with green and sweet chutneys and a green chili pepper.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 20</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/16.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Mirchi Vada</p>
+            <p class="card-text">A Spicy and savoury snack from the Rajasthani Cuisine consisting of potato stuffed large green chilli coated with besan and served with Tamrind and Mint chutney.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/17.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Idli</p>
+            <p class="card-text">A type of savoury rice cake, originating from South India made from rice and Urad Fermented batter & served with Chutney and sambhar has no fat and no cholesterol.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/18.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Nylon Khaman</p>
+            <p class="card-text">A Gujarati savory dish that is spongy, light and moist made from besan, well balanced salty, sweet and sour taste along with some spiciness of green chilies.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/19.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Jalebi</p>
+            <p class="card-text">A crispy and crunchy dessert dipped in sugar syrup and loaded with flavours generally served with Rabdi comes from the Indian Cuisine will definitely make your day. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/20.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Fafda</p>
+            <p class="card-text">A fried crispy crunchy tasty snack made with besan, laced with carom seeds and black pepper, from the Gujarati Cuisine served with sweet Kadhi.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 30</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/21.jfif" class="d-block w-100" alt="Chocolate Cone" width="900" height="200">
+          <div class="card-body">
+            <p class="card-text">Poori Sabzi</p>
+            <p class="card-text">A North Indian breakfast consisting of a spicy potato curry served with hot deep-fried puffed up Puri, Achar fried green chilli and a glass of buttermilk.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              {% comment %} <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> {% endcomment %}
+              <small class="text-muted">₹ 50</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
